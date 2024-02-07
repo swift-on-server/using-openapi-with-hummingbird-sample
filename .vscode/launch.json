@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:using-openapi-with-hummingbird-sample}",
+            "name": "Debug swift-nio-part-2",
+            "program": "${workspaceFolder:using-openapi-with-hummingbird-sample}/.build/debug/swift-nio-part-2",
+            "preLaunchTask": "swift: Build Debug swift-nio-part-2"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:using-openapi-with-hummingbird-sample}",
+            "name": "Release swift-nio-part-2",
+            "program": "${workspaceFolder:using-openapi-with-hummingbird-sample}/.build/release/swift-nio-part-2",
+            "preLaunchTask": "swift: Build Release swift-nio-part-2"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:using-openapi-with-hummingbird-sample}",
+            "name": "Debug MyApp",
+            "program": "${workspaceFolder:using-openapi-with-hummingbird-sample}/.build/debug/MyApp",
+            "preLaunchTask": "swift: Build Debug MyApp"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:using-openapi-with-hummingbird-sample}",
+            "name": "Release MyApp",
+            "program": "${workspaceFolder:using-openapi-with-hummingbird-sample}/.build/release/MyApp",
+            "preLaunchTask": "swift: Build Release MyApp"
+        }
+    ]
+}
