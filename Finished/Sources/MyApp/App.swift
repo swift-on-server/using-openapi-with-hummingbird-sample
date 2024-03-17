@@ -12,8 +12,8 @@ import OpenAPIRuntime
 
     func run() async throws {
         // 1
-        let router = HBRouter()
-        router.middlewares.add(HBLogRequestsMiddleware(.info))
+        let router = Router()
+        router.middlewares.add(LogRequestsMiddleware(.info))
 
         // 2
         let api = HelloAPI()
@@ -22,7 +22,7 @@ import OpenAPIRuntime
         try api.registerHandlers(on: router)
         
         // 4
-        let app = HBApplication(
+        let app = Application(
             router: router,
             configuration: .init(address: .hostname(hostname, port: port))
         )
